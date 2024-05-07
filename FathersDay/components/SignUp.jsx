@@ -40,9 +40,7 @@ return (
             <label> Email:</label>
             <input value={email} onChange={(event)=>setEmail(event.target.value)}></input>
             <br></br>
-            <label> Password:</label>
-            <input value={password} onChange={(event)=>setPassword(event.target.value)}></input>
-            <br></br>        
+             
             <button>Submit</button>
         </form>
 </>
