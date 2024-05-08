@@ -8,6 +8,7 @@ const Navigations = ({user}) => {
     return (
         <nav>
             <Link to='/'>Home Page</Link>
+            <Link to='/signup'>Be In The Know</Link>
             {/* {
                 user.email ? (
                     <span>
