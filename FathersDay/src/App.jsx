@@ -3,8 +3,9 @@ import {Routes, Route} from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import SignUp from '../components/SignUp'
+
 import './App.css'
-import Navigations from '../components/Navigations'
+// import Navigations from '../components/Navigations'
 // import HomePage from '../components/HomePage'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
 <Routes>
 {/* <Route path="/" element={<HomePage/>}/> */}
+{/* <Route path="/" element={<Navigations/>}/> */}
   <Route path="/signup" element={<SignUp/>}/>
 </Routes>
       <div>

@@ -1,30 +1,38 @@
-/* TODO - add your code to create a functional React component that renders a navigation bar for the different views in your single page application. You may consider conditionally rendering some options - for example 'Login' should be available if someone has not logged in yet. */
+import { Link} from 'react-router-dom'
 
-import { Link } from "react-router-dom"
+export default function Navigations({ name, token, role, setUser }) {
 
-const Navigations = ({user}) => {
-    
-    
+    // function logOut() {
+
+    //     localStorage.removeItem("username");
+    //     localStorage.removeItem("role");
+    //     localStorage.removeItem("token");
+
+    //     setUser({
+    //         name: null,
+    //         token: null,
+    //         role: null
+    //     });
+
+    // };
+
+    function handleClick(event) {
+
+        event.preventDefault();
+        window.location.reload();
+
+    };
+
     return (
-        <nav>
-            <Link to='/'>Home Page</Link>
-            <Link to='/signup'>Be In The Know</Link>
-            {/* {
-                user.email ? (
-                    <span>
-                        <Link to="/account">User</Link>
-                    </span>
-                
-                ) : (
-                    
-                    <span>
-                        <Link to="/login">Login</Link>
-                        <Link to='/register'>Register</Link>
-                    </span>
-                )
-            } */}
-        </nav>
-    )
-}
+        <div id="navBar">
 
-export default Navigations
+            <div>
+
+
+                    <button onClick={handleClick}><Link to="/">Home (All Posts)</Link></button>
+                    <button onClick={handleClick}><Link to="/signup">Sign Up For Notifications</Link></button>
+                </div>
+
+
+        </div>
+    );}

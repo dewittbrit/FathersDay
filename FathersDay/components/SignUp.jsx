@@ -40,7 +40,7 @@ return (
             <label> Email:</label>
             <input value={email} onChange={(event)=>setEmail(event.target.value)}></input>
             <br></br>
-             
+             <p> Be one of the first to know when I have something fun going on :)</p>
             <button>Submit</button>
         </form>
 </>
